@@ -1,9 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { ButtonComponent } from './shared/components/button/button';
 import { InputComponent } from './shared/components/input/input';
 @Component({
   selector: 'app-root',
-  imports: [ButtonComponent, InputComponent],
+  imports: [InputComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

@@ -1,5 +1,9 @@
-<app-button (btnClick)="onButtonClick()">
-  <span #buttonContent>Новая кнопка!!!</span>
-</app-button>
-
 <app-input iconUrl="icons/form/mail.svg" (controlValue)="onInputChange($event)"></app-input>
+
+<button (click)="onButtonClick()">Click Me!</button>
+<hr />
+@if (isButtonClicked) {
+  <p>Ты нажал на кнопку!</p>
+} @else {
+  <p>Тебе следует нажать на кнопку!</p>
+}
