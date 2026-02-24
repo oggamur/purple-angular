@@ -8,6 +8,7 @@ import { InputComponent } from './shared/components/input/input';
 })
 export class AppComponent {
   title = signal('filmly-angular');
+  greatings: string[] = ['Привет', 'Хеллоу', 'Хай', 'Шалом', 'Здорова', 'Салам'];
 
   isButtonClicked = false;
 

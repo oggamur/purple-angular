@@ -7,3 +7,9 @@
 } @else {
   <p>Тебе следует нажать на кнопку!</p>
 }
+
+<ul>
+  @for (greating of greatings; track greating; let i = $index) {
+    <li>{{ greating }}</li>
+  }
+</ul>
