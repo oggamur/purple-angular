@@ -1,5 +1,5 @@
-<app-button>
+<app-button (btnClick)="onButtonClick()">
   <span #buttonContent>Новая кнопка!!!</span>
 </app-button>
 
-<input #myInput type="text" />
+<app-input iconUrl="icons/form/mail.svg" (controlValue)="onInputChange($event)"></app-input>

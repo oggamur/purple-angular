@@ -1,18 +1,22 @@
-import { Component, ElementRef, signal, ViewChild } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ButtonComponent } from './shared/components/button/button';
-
+import { InputComponent } from './shared/components/input/input';
 @Component({
   selector: 'app-root',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, InputComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class AppComponent {
-  @ViewChild('myInput') inputElement!: ElementRef | null;
+  title = signal('filmly-angular');
 
-  onBtnClick() {
-    console.log(this.inputElement);
+  isButtonClicked = false;
+
+  onButtonClick() {
+    this.isButtonClicked = !this.isButtonClicked;
   }
 
-  protected readonly title = signal('filmly-angular');
+  onInputChange($event: string | null) {
+    console.log($event);
+  }
 }

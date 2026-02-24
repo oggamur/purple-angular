@@ -1,0 +1,35 @@
+.form__control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 360px;
+  padding: 14px 14px;
+  background-color: #2b2f3a;
+  border-radius: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  background-color: #2b2f3a;
+
+  color: #a0a0a0;
+
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #b0b0b0;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.form__icon img {
+  padding-right: 17px;
+}
