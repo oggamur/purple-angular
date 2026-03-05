@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { InputComponent } from './shared/components/input/input';
+import { LayoutComponent } from './public/_layout/layout';
+
 @Component({
   selector: 'app-root',
-  imports: [InputComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.scss',
+  imports: [LayoutComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = signal('filmly-angular');

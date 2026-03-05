@@ -1,0 +1,50 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #09090f;
+  background-image: url('/background/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.layout__logo {
+  margin-bottom: 39px;
+}
+
+.layout__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+
+  margin-bottom: 26px;
+  font-weight: 400;
+}
+
+.layout__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout__form app-input {
+  margin-bottom: 17px;
+}
+
+.layout__form app-button {
+  margin-top: 22px;
+}
