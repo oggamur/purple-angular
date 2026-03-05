@@ -4,17 +4,19 @@
   align-items: center;
   width: 360px;
   padding: 14px 14px;
-  background-color: #2b2f3a;
   border-radius: 16px;
 
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+
+  background: rgba(118, 118, 128, 0.12);
+
   backdrop-filter: blur(10px);
 }
 
 .form__input {
   display: flex;
   align-items: center;
-  background-color: #2b2f3a;
 
   color: #a0a0a0;
 
@@ -28,6 +30,11 @@
   outline: none;
   flex: 1;
   font-size: 16px;
+}
+
+.form__eye {
+  width: 16px;
+  height: 16px;
 }
 
 .form__icon img {

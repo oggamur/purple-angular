@@ -8,4 +8,12 @@
     [disabled]="isDisabled"
     (input)="onInputChange($any($event.target).value)"
   />
+  @if (type === 'password' || type === 'text') {
+    <button class="form__eye" (click)="onEyeClick()">
+      <img
+        [src]="isPasswordVisible ? '/icons/form/eye_opened.svg' : '/icons/form/eye_closed.svg'"
+        [alt]="isPasswordVisible ? 'Open Eye' : 'Closed Eye'"
+      />
+    </button>
+  }
 </div>
