@@ -1,0 +1,16 @@
+<button class="nav-button">
+  <ng-container
+    class="nav-button__icon"
+    *appButtonIcon="isActive; url: iconUrlInActive; activeUrl: iconUrlActive; let src"
+  >
+    <img [ngSrc]="src" alt="Navigation icon" width="24" height="24" />
+  </ng-container>
+  <p
+    class="nav-button__text"
+    [ngClass]="{
+      'nav-button__text--active': isActive,
+    }"
+  >
+    {{ text }}
+  </p>
+</button>

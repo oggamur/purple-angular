@@ -1,0 +1,29 @@
+<div class="sort-filter">
+  <h3 class="sort-filter__title">Сортировать</h3>
+  <div class="sort-filter__list">
+    @for (sortType of sortTypes; track sortType) {
+      <label class="sort-filter__item">
+        <input
+          type="radio"
+          name="sort"
+          [value]="sortType"
+          [checked]="sortType === 'По названию'"
+          class="sort-filter__radio"
+        />
+        <span class="sort-filter__custom-radio">
+          <img
+            src="/icons/radio-buttons/unchecked_radio_button_icon.svg"
+            alt=""
+            class="sort-filter__icon sort-filter__icon--unchecked"
+          />
+          <img
+            src="/icons/radio-buttons/checked_radio_button_icon.svg"
+            alt=""
+            class="sort-filter__icon sort-filter__icon--checked"
+          />
+        </span>
+        <span class="sort-filter__label">{{ sortType }}</span>
+      </label>
+    }
+  </div>
+</div>

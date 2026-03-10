@@ -1,0 +1,29 @@
+<div class="genre-filter">
+  <h3 class="genre-filter__title">Жанр</h3>
+  <div class="genre-filter__list">
+    @for (genre of genres; track genre) {
+      <label class="genre-filter__item">
+        <input
+          type="radio"
+          name="genre"
+          [value]="genre"
+          [checked]="genre === 'Мелодрама'"
+          class="genre-filter__radio"
+        />
+        <span class="genre-filter__custom-radio">
+          <img
+            src="/icons/radio-buttons/unchecked_radio_button_icon.svg"
+            alt=""
+            class="genre-filter__icon genre-filter__icon--unchecked"
+          />
+          <img
+            src="/icons/radio-buttons/checked_radio_button_icon.svg"
+            alt=""
+            class="genre-filter__icon genre-filter__icon--checked"
+          />
+        </span>
+        <span class="genre-filter__label">{{ genre }}</span>
+      </label>
+    }
+  </div>
+</div>

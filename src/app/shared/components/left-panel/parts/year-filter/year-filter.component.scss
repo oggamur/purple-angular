@@ -1,0 +1,41 @@
+.year-filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.year-filter__title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.year-filter__container {
+  display: flex;
+  gap: 14px;
+}
+
+.year-filter__item {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  flex-shrink: 0;
+  width: 120px;
+  padding: 16px 12px 17px;
+  text-align: left;
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(118, 118, 128, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.year-filter__item input {
+  border: none;
+  outline: none;
+}
+
+.year-filter__item input::placeholder {
+  font-size: 14px;
+}
