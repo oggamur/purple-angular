@@ -1,12 +1,13 @@
 import { AfterViewInit, Component, ElementRef, inject, Input, OnDestroy } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { NgClass, NgOptimizedImage } from '@angular/common';
+import { ButtonIconDirective } from '../../directives/button-icon.directive';
 
 @Component({
   selector: 'app-nav-button',
   templateUrl: './nav-button.component.html',
   styleUrls: ['./nav-button.component.scss'],
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, ButtonIconDirective, NgOptimizedImage],
 })
 export class NavButtonComponent implements AfterViewInit, OnDestroy {
   private _elementRef: ElementRef = inject(ElementRef);

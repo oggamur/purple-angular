@@ -9,4 +9,6 @@ import { FilmCardComponent } from '../../../shared/components/film-card/film-car
   imports: [ContentHeadingComponent, FilmCardComponent],
   standalone: true,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  isVisible = true;
+}

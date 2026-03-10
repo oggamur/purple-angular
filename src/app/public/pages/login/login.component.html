@@ -16,6 +16,8 @@
       type="password"
       (controlValue)="onInputChange($event)"
     ></app-input>
-    <app-button (click)="onLoginBtnClick()">Войти</app-button>
+    <app-button appClickLogger="Login button clicked" (click)="onLoginBtnClick()">
+      Войти
+    </app-button>
   </div>
 </div>

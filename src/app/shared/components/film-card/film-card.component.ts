@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './film-card.component.html',
   styleUrl: './film-card.component.scss',
 })
-export class FilmCardComponent {}
+export class FilmCardComponent {
+  headerColor = 'black';
+}

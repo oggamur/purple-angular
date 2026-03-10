@@ -1,13 +1,10 @@
 <button class="nav-button">
-  @if (isActive && iconUrlActive) {
-    <div class="nav-button__icon">
-      <img [src]="iconUrlActive" alt="Active icon" />
-    </div>
-  } @else {
-    <div class="nav-button__icon">
-      <img [src]="iconUrlInActive" alt="Inactive icon" />
-    </div>
-  }
+  <ng-container
+    class="nav-button__icon"
+    *appButtonIcon="isActive; url: iconUrlInActive; activeUrl: iconUrlActive; let src"
+  >
+    <img [ngSrc]="src" alt="Navigation icon" width="24" height="24" />
+  </ng-container>
   <p
     class="nav-button__text"
     [ngClass]="{
