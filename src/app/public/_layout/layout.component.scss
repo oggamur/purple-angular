@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  width: 100vw;
+
+  background-color: #09090f;
+  background-image: url('/background/bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}

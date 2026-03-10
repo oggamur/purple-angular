@@ -1,0 +1,21 @@
+<div class="layout__content">
+  <div class="layout__logo">
+    <img src="images/logo.svg" alt="Filmly Logo" />
+  </div>
+  <h1 class="layout__heading">Вход</h1>
+  <div class="layout__form">
+    <app-input
+      iconUrl="icons/form/mail.svg"
+      placeholder="Email"
+      (controlValue)="onInputChange($event)"
+      type="email"
+    ></app-input>
+    <app-input
+      iconUrl="icons/form/lock.svg"
+      placeholder="Пароль"
+      type="password"
+      (controlValue)="onInputChange($event)"
+    ></app-input>
+    <app-button (click)="onLoginBtnClick()">Войти</app-button>
+  </div>
+</div>

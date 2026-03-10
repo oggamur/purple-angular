@@ -1,0 +1,26 @@
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 15px 14px 16px;
+  margin-bottom: 38px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(118, 118, 128, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.search__icon {
+  margin-right: 16px;
+}
+
+.search__input {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.search__arrow {
+  margin-left: 12px;
+}

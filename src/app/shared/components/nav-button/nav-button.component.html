@@ -1,0 +1,19 @@
+<button class="nav-button">
+  @if (isActive && iconUrlActive) {
+    <div class="nav-button__icon">
+      <img [src]="iconUrlActive" alt="Active icon" />
+    </div>
+  } @else {
+    <div class="nav-button__icon">
+      <img [src]="iconUrlInActive" alt="Inactive icon" />
+    </div>
+  }
+  <p
+    class="nav-button__text"
+    [ngClass]="{
+      'nav-button__text--active': isActive,
+    }"
+  >
+    {{ text }}
+  </p>
+</button>
