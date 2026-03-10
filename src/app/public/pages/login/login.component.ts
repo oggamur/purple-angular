@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   onLoginBtnClick() {
-    this.router.navigate(['/private'], {
+    this.router.navigate(['/private/home'], {
       queryParams: {
         from: 'auth',
       },
